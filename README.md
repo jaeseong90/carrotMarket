@@ -1,3 +1,64 @@
+# 당근마켓 클론코딩 
+당근마켓 클론코딩을 재밌게 해보자..
+
+
+## 1. Setup
+- 윈도우, vscode, yarn 
+- 설치할 필요 없음.
+- 확장 tailwindcss intellisense
+- 기타 확장 auto rename tag, colorize, eslint, highlight matching tag, intellicode, korea langeuage packa, path autocomplate, powershell, prettier-code formatter
+- prisma , graphQL ,rest client, live server
+- vscode-styled-components, styled-jsx language server
+
+
+### 1.1. nextjs app 생성
+- typescript 템플릿 적용한 nextjs app 생성 
+```
+yarn create next-app@latest --typescript
+```
+### 1.2 tailwindcss 설치 및 환경설정
+- 설치
+```
+yarn add -D tailwindcss postcss autoprefixer
+```
+- tailwind 초기화 ( -p postcss.config.js 파일 생성)
+```
+npx tail windcss init -p
+```
+- tailwind.config.js (적용대상 설정 )
+```
+content: ['./pages/**/*.{js,jsx,ts,tsx}', './components/**/*.{js,jsx,ts,tsx}'],
+```
+
+- global.css (tailwind적용)
+```
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
+- Automatic Class Sorting with Prettier 플러그인
+```
+npm install -D prettier prettier-plugin-tailwindcss
+```
+
+### 1.3 tailwind
+- 
+
+## 참고 
+- tailwindcss + prettier https://tailwindcss.com/blog/automatic-class-sorting-with-prettier
+- tailwindcss https://tailwindcss.com/
+
+
+
+
+
+
+
+<br><br><br><br><br>
+
+---
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
